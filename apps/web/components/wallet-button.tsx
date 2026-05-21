@@ -25,7 +25,11 @@ export function WalletButton() {
 
   if (!isConnected || !address) {
     return (
-      <Button onClick={connect} disabled={isConnecting}>
+      <Button
+        onClick={connect}
+        disabled={isConnecting}
+        className="bg-[#2D43FF] text-white hover:bg-[#4B5EFF]"
+      >
         {isConnecting ? "Conectando…" : "Conectar wallet"}
       </Button>
     );
@@ -35,7 +39,7 @@ export function WalletButton() {
     <div ref={containerRef} className="relative">
       <Button
         variant="outline"
-        className="font-mono"
+        className="border-white/15 bg-transparent font-[family-name:var(--font-geist-mono)] text-[#F5F4ED] hover:bg-white/5 hover:text-[#F5F4ED]"
         onClick={() => setMenuOpen((open) => !open)}
         aria-haspopup="menu"
         aria-expanded={menuOpen}
