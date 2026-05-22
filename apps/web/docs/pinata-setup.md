@@ -20,16 +20,17 @@ credencial nunca llega al browser. Pinata usa un **JWT** simple (no UCAN).
 
 2. En el dashboard, ir a **API Keys → New Key**.
 
-3. Marcar **"Customize Permissions"** (no uses Admin).
+3. Marcar **"Customize Permissions"**.
 
-4. Habilitar estos permisos:
-   - `pinFileToIPFS`
-   - `pinJSONToIPFS`
-   - `addPinObject`
-   - `getPinObject`
-   - `listPinObjects`
-   - `pinList`
-   - `userPinnedDataTotal`
+4. Habilitar los permisos de la **API v3 → Files**, que es la que usa el SDK
+   (`pinata.upload.public.file` → `uploads.pinata.cloud/v3/files`):
+   - **Files: Write** (crear/subir) — imprescindible para el upload.
+   - **Files: Read** (opcional, para listar/leer).
+
+   > ⚠️ Los permisos *legacy* de pinning (`pinFileToIPFS`, `pinJSONToIPFS`,
+   > etc.) **no** habilitan la API v3: con solo esos, el upload responde
+   > `401 Not Authorized` aunque la key autentique bien. Si preferís no
+   > pelearte con scopes, una key **Admin** funciona para todo.
 
 5. Nombrar la key (ej: `molotov-api`) y crearla.
 
