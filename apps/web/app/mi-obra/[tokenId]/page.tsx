@@ -16,9 +16,10 @@ const RPC_URL = "https://soroban-testnet.stellar.org";
 const READ_SOURCE = "GANXCETUVUUILGJPVEZWM7EH66IZM5OICUPMNUWNXKIBRK425MUKZERM";
 
 function ipfsToGateway(uri: string): string {
-  return uri.startsWith("ipfs://")
-    ? `https://gateway.lighthouse.storage/ipfs/${uri.slice("ipfs://".length)}`
-    : uri;
+  if (!uri.startsWith("ipfs://")) return uri;
+  const [cid, ...rest] = uri.slice("ipfs://".length).split("/");
+  const suffix = rest.length ? `/${rest.join("/")}` : "";
+  return `https://${cid}.ipfs.w3s.link${suffix}`;
 }
 
 type Artwork = {
