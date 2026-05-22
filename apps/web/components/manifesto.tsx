@@ -17,7 +17,7 @@ export function Manifesto() {
         <div className="max-w-2xl space-y-7 font-[family-name:var(--font-fraunces)] text-xl leading-[1.5] tracking-[-0.005em] text-[#F5F4ED]/90 [font-variation-settings:'opsz'_40] md:text-2xl">
           <p>
             No hicimos Molotov para especular. Lo hicimos para que un artista
-            pueda <em className="italic text-[#5B6CFF]">vivir de su obra</em>.
+            pueda <em className="italic text-[#0178DE]">vivir de su obra</em>.
           </p>
           <p>
             Durante siglos el artista vendió una vez y vio cómo su trabajo se

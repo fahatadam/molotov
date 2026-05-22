@@ -90,7 +90,7 @@ export function ActivityFeed() {
             </p>
             <p className="font-[family-name:var(--font-geist-mono)] text-[13px] text-[#F5F4ED]/60 md:text-right">
               royalty {entry.royaltyPct} ·{" "}
-              <span className="text-[#5B6CFF]">{entry.royaltyXlm} XLM</span> →{" "}
+              <span className="text-[#0178DE]">{entry.royaltyXlm} XLM</span> →{" "}
               {entry.artist}
             </p>
           </li>

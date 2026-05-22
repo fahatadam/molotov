@@ -40,7 +40,7 @@ export function Footer() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="font-[family-name:var(--font-geist-mono)] text-[13px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D43FF]"
+                  className="font-[family-name:var(--font-geist-mono)] text-[13px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0178DE]"
                 >
                   {link.label}
                 </a>
@@ -74,7 +74,7 @@ export function Footer() {
           href={contractExplorerUrl(NFT_CONTRACT_ID)}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-[family-name:var(--font-geist-mono)] text-[12px] text-[#F5F4ED]/60 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D43FF]"
+          className="font-[family-name:var(--font-geist-mono)] text-[12px] text-[#F5F4ED]/60 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0178DE]"
         >
           Contrato {truncateAddress(NFT_CONTRACT_ID, 6, 6)} ↗
         </a>

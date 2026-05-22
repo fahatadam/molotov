@@ -9,7 +9,7 @@ export function Hero() {
         <p className="flex items-center gap-2.5 font-[family-name:var(--font-geist-mono)] text-[13px] uppercase tracking-[0.18em] text-[#F5F4ED]/60">
           <span
             aria-hidden
-            className="inline-block size-1.5 rounded-full bg-[#2D43FF] animate-breathe"
+            className="inline-block size-1.5 rounded-full bg-[#0178DE] animate-breathe"
           />
           Para artistas · Beta abierta · Buenos Aires
         </p>
@@ -19,7 +19,7 @@ export function Hero() {
       <div className="px-6 md:px-10 lg:px-16">
         <h1 className="mt-8 font-[family-name:var(--font-fraunces)] text-[clamp(2.75rem,9vw,8.5rem)] font-light leading-[0.95] tracking-[-0.02em] [font-variation-settings:'opsz'_144] md:ml-auto md:max-w-[82%] md:text-right lg:max-w-[70%] lg:-mr-[2vw]">
           Tu obra te paga{" "}
-          <em className="font-normal italic text-[#5B6CFF]">cada vez</em> que
+          <em className="font-normal italic text-[#0178DE]">cada vez</em> que
           cambia de manos.
         </h1>
       </div>
@@ -42,13 +42,13 @@ export function Hero() {
         <div className="flex flex-col gap-3 sm:flex-row md:flex-col md:items-end">
           <Link
             href="#crear"
-            className="inline-flex h-12 items-center justify-center rounded-md bg-[#2D43FF] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#4B5EFF] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
+            className="inline-flex h-12 items-center justify-center rounded-md bg-[#0178DE] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#3493E5] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
           >
             Mintear primera obra
           </Link>
           <a
             href="#actividad"
-            className="inline-flex h-12 items-center justify-center px-2 font-[family-name:var(--font-geist-mono)] text-[14px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D43FF]"
+            className="inline-flex h-12 items-center justify-center px-2 font-[family-name:var(--font-geist-mono)] text-[14px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0178DE]"
           >
             ¿Coleccionás? Ver obras en venta
           </a>

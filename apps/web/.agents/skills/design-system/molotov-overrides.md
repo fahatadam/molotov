@@ -42,10 +42,10 @@ puntual, **nunca inundatorio**.
 --color-fg-subtle:     rgba(245, 244, 237, 0.40);  /* labels, metadata */
 --color-border:        rgba(245, 244, 237, 0.12);  /* hairlines, divisores */
 
-/* Acento Molotov */
---color-accent:          #2D43FF;  /* azul electrico: fills, bordes, focus, dots, underlines */
---color-accent-on-dark:  #5B6CFF;  /* tint claro para TEXTO de acento sobre fondo oscuro */
---color-accent-hover:    #4B5EFF;  /* estado hover de elementos accent */
+/* Acento Molotov — azul de la llama del logo oficial (ver nota abajo) */
+--color-accent:          #0178DE;  /* azul llama: fills, bordes, focus, dots, underlines */
+--color-accent-on-dark:  #0178DE;  /* mismo hex: pasa AA sobre #000 (4.74:1), no necesita tint */
+--color-accent-hover:    #3493E5;  /* estado hover de elementos accent (tint +20% blanco) */
 
 /* Semánticos funcionales (heredados de la base, sólo para estados de sistema) */
 --color-success: #16A34A;
@@ -55,15 +55,23 @@ puntual, **nunca inundatorio**.
 
 **Reglas de color:**
 
-- El acento `--color-accent` (#2D43FF) **must** usarse de forma puntual:
+- El acento `--color-accent` (#0178DE) **must** usarse de forma puntual:
   underlines, dots, focus rings, fills de botón primario, bordes activos. No
   pintar bloques grandes ni fondos enteros con él.
-- **Contraste del acento como texto:** #2D43FF sobre #000000 da ~2.6:1, que
-  **no pasa WCAG AA** ni para texto grande. Por eso:
-  - Para **texto de acento sobre fondo oscuro** (links, palabra resaltada en el
-    H1) usar `--color-accent-on-dark` (#5B6CFF, ~4.6:1). ✅
-  - #2D43FF como texto sólo es válido **sobre off-white** (`--color-fg` de
-    fondo), no sobre negro. ✅
+- **Contraste del acento como texto:** #0178DE sobre #000000 da **4.74:1**, que
+  **sí pasa WCAG AA** para texto normal (≥4.5:1). Por eso:
+  - `--color-accent-on-dark` es el **mismo hex** que `--color-accent` (no hace
+    falta un tint más claro como antes). Usarlo para links y palabras resaltadas
+    sobre fondo oscuro (H1, "2,5%", "Royalty 10%", "vivir de su obra"). ✅
+  - El margen es ajustado (4.74:1): para texto **muy** chico sobre negro,
+    preferir `--color-fg`; el acento queda para palabras o números destacados.
+
+> **Nota — cambio de acento (Paso 5.7):** el acento pasó de `#2D43FF` (azul
+> provisional) a **`#0178DE`**, muestreado del azul de la llama del logo oficial
+> (`apps/web/public/brand/logo_sinfondo.png`, promedio de ~23k px del centro de
+> la llama). Unifica la identidad: el color del sistema ahora sale de la marca,
+> no de un valor inventado. Hover `#3493E5` (canon +20% blanco). El antiguo
+> `#5B6CFF` (tint accent-on-dark) y `#4B5EFF` (hover) quedan obsoletos.
 - **Prohibido** todo gradiente purple→pink o variantes (cliché de marketplaces
   NFT). Si se usa gradiente, que sea monocromo sutil (negro→casi-negro) o
   basado en el acento azul a baja opacidad.
@@ -158,8 +166,10 @@ para frases enteras.
 - Gradientes purple→pink o cualquier paleta "NFT genérica".
 - Fondos claros / surfaces blancas heredadas de la base.
 - Inter, Roboto o Arial.
-- #2D43FF como texto chico sobre negro (falla contraste; usar accent-on-dark).
+- El acento (#0178DE) como texto **muy** chico sobre negro (margen AA ajustado,
+  4.74:1); para texto fino usar `--color-fg`.
 - Acento azul inundando bloques grandes o fondos.
+- Reintroducir el viejo #2D43FF / #5B6CFF / #4B5EFF (obsoletos desde Paso 5.7).
 - Lenguaje cripto-bro o emojis de cohete/fuego/dinero/gemas.
 
 ---

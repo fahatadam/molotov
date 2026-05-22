@@ -28,7 +28,7 @@ export function WalletButton() {
       <Button
         onClick={connect}
         disabled={isConnecting}
-        className="bg-[#2D43FF] text-white hover:bg-[#4B5EFF]"
+        className="bg-[#0178DE] text-white hover:bg-[#3493E5]"
       >
         {isConnecting ? "Conectando…" : "Conectar wallet"}
       </Button>

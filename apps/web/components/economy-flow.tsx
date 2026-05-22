@@ -72,7 +72,7 @@ export function EconomyFlow() {
                 style={{ transitionDelay: `${i * 120}ms` }}
                 className={`reveal flex flex-col gap-1 border-b border-white/12 py-6 md:flex-row md:items-baseline md:gap-8 ${
                   inView ? "in" : ""
-                } ${row.accent ? "border-l-2 border-l-[#2D43FF] pl-5 md:pl-6" : ""}`}
+                } ${row.accent ? "border-l-2 border-l-[#0178DE] pl-5 md:pl-6" : ""}`}
               >
                 <div className="flex items-baseline gap-3 md:w-64">
                   <span aria-hidden className="text-[#F5F4ED]/40">
@@ -119,7 +119,7 @@ export function EconomyFlow() {
             </div>
             <div className="flex items-end justify-between border-b border-white/12 pb-4">
               <dt className="text-base text-[#F5F4ED]">Se queda Molotov</dt>
-              <dd className="font-[family-name:var(--font-geist-mono)] text-4xl text-[#5B6CFF] md:text-5xl">
+              <dd className="font-[family-name:var(--font-geist-mono)] text-4xl text-[#0178DE] md:text-5xl">
                 2,5%
               </dd>
             </div>

@@ -13,13 +13,13 @@ export function FinalCta() {
       <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
         <Link
           href="#crear"
-          className="inline-flex h-12 items-center justify-center rounded-md bg-[#2D43FF] px-7 text-[15px] font-medium text-white transition-colors hover:bg-[#4B5EFF] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
+          className="inline-flex h-12 items-center justify-center rounded-md bg-[#0178DE] px-7 text-[15px] font-medium text-white transition-colors hover:bg-[#3493E5] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
         >
           Mintear primera obra
         </Link>
         <a
           href="#actividad"
-          className="inline-flex h-12 items-center px-2 font-[family-name:var(--font-geist-mono)] text-[14px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D43FF]"
+          className="inline-flex h-12 items-center px-2 font-[family-name:var(--font-geist-mono)] text-[14px] text-[#F5F4ED]/70 underline-offset-4 transition-colors hover:text-[#F5F4ED] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0178DE]"
         >
           ¿Coleccionás? Ver obras en venta
         </a>

@@ -8,7 +8,7 @@ export function FeaturedWork() {
     <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-36 lg:px-16">
       <div className="max-w-2xl">
         <h2 className="font-[family-name:var(--font-fraunces)] text-3xl leading-tight tracking-[-0.01em] [font-variation-settings:'opsz'_72] md:text-5xl">
-          El espacio está vacío. <em className="italic text-[#5B6CFF]">A propósito.</em>
+          El espacio está vacío. <em className="italic text-[#0178DE]">A propósito.</em>
         </h2>
         <p className="mt-6 max-w-md text-base leading-relaxed text-[#F5F4ED]/70">
           Todavía no hay obras. Cuando minteás, tu obra ocupa este lugar con la
@@ -31,8 +31,8 @@ export function FeaturedWork() {
 
         {/* ...and one frame showing the real card anatomy and metadata. */}
         <article className="bg-[#0A0A0B] p-4">
-          <div className="relative flex aspect-[4/5] items-center justify-center border border-dashed border-[#2D43FF]/50">
-            <span className="font-[family-name:var(--font-geist-mono)] text-[12px] uppercase tracking-[0.22em] text-[#5B6CFF]">
+          <div className="relative flex aspect-[4/5] items-center justify-center border border-dashed border-[#0178DE]/50">
+            <span className="font-[family-name:var(--font-geist-mono)] text-[12px] uppercase tracking-[0.22em] text-[#0178DE]">
               Tu obra acá
             </span>
             <span className="absolute right-3 top-3 rounded-full border border-white/15 px-2 py-0.5 font-[family-name:var(--font-geist-mono)] text-[10px] uppercase tracking-wider text-[#F5F4ED]/60">
@@ -61,7 +61,7 @@ export function FeaturedWork() {
       <div className="mt-12">
         <Link
           href="#crear"
-          className="inline-flex h-12 items-center justify-center rounded-md bg-[#2D43FF] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#4B5EFF] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
+          className="inline-flex h-12 items-center justify-center rounded-md bg-[#0178DE] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#3493E5] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5F4ED]"
         >
           Mintear primera obra
         </Link>
